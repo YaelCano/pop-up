@@ -116,9 +116,13 @@ color:#222;
 }
 .img1{
     border: solid 1px red;
+    display: block;
+    margin: 0 auto;
+    width: 20%;
 }
 .imagen{
     border: 1px solid seagreen;
+ 
 }
 #text1{
     width: 100%;
@@ -142,5 +146,28 @@ color:#222;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    align-items: center;
+}
+button {
+    --primary-color: #645bff;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+}
+button:hover {
+    background-color: green;
+}
+.container{
+    display: grid;
     align-items: center;
 }
