@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "MyriadPro-light";
+    src: url(../font/MyriadPro-Light.otf) format("truetype");
+    font-family: "MyriadPro";
+    src: url(../font/MYRIADPRO-REGULAR.OTF) format("truetype");
+    font-family: "MyriadPro-Bold";
+    src: url(../font/MYRIADPRO-BOLD.OTF) format("truetype");
+    font-family: "Kollektif-SemiBold";
+    src: url(../font/MYRIADPRO-SEMIBOLD.OTF) format("truetype");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family:"MyriadPro";
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+    align-items: center;
+    font-size: 1.5rem;
+}
+#menu{
+    font-size: 1.2rem;
+}
+#repair{
+    width: 10%;
+}
+hr{
+    width: 90%;
+    margin: auto;
+    height: 2px;
+}
+
+main{
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 60% 10%;
+    gap: 1rem;
+}
+.pedrito{
+    grid-column: 1/4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 4rem;
+}
+.bienve{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.personal,.factur{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1.3rem;
+    text-align: center;
+}
+#cambiar{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#texto1{
+    font-size: 0.8rem;
+}
+.prueba{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.entrar{
+    height: 3.3rem;
+    width: 12rem;
+    border: none;
+    background-color: rgb(56, 56, 252);
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 27px;
+}
+
+.actual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    right: 190px;
+    bottom: 100px;
+}
+.servi{
+    font-size: 1.5rem;
+}
+
+#google{
+    width: 100%;
+}
+.status-g{
+    display: flex;
+    font-size: 0.9rem;
+    gap:3.5rem;
+}
+.report{
+    border: none;
+    background-color: red;
+    color: white;
+    width: 4.8rem;
+    border-radius: 20px;
+}
+#celular{
+    display: flex;
+    gap: 2.8rem;
+}
+.cambio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.86rem;
+}
+#cambiar1,#tecnico{
+    font-weight: 800;
+}
+
+.info-and{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+#usuario{
+    width: 14%;
+}
+.tecni{
+    width: 100%;
+    text-align: center;
+    padding-right: 12rem;
+}
+.icon {
+    display: inline-block;
+    width: 1.6em;
+    height: 1.6em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+.icons{
+    display: flex;
+    gap: 1rem;
+}
+.botonb{
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+}
+#baja{
+    width: 7rem;
+    height: 2rem;
+    border: none;
+    background-color: rgb(56, 56, 252);
+    color: white;
+    border-radius: 25px;
+}
+button{
+    cursor: pointer;
+}
+
+@media (min-width:768px) and (max-width:1124px){
+    main{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:max-content;
+    }
+    .actual{
+        grid-column: 1/3;
+        position: unset;
+    }
+    .pedrito{
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width:767px){
+    main{
+        grid-template-columns: 100%;
+        grid-template-rows: max-content;
+    }
+    .pedrito,.personal,.factura,.actual{
+        grid-column: 1/2;
+    }
+    body{
+        overflow-y:scroll;
+        text-align: center;
+    }
+    .pedrito{
+        padding: 1rem;
+    }
+}
