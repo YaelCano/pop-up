@@ -1,10 +1,6 @@
-
-
-
 /*Efecto*/
 .modalmask {
     position: fixed;
-    font-family: Arial, sans-serif;
     top: 0;
     right: 0;
     bottom: 0;
@@ -24,10 +20,11 @@
 
 /*Formato de la ventana*/
 .modalbox{
-    width: 600px;
-    height: 500px;
+    width: 500px;
+    height: 760px;
     position: relative;
-    padding: 5px 20px 13px 20px;
+    margin-top: 46px;
+    padding: 5px 10px 13px 20px;
     background: #fff;
     border-radius:20px;
     -webkit-transition: all 500ms ease-in;
@@ -38,6 +35,7 @@
 /*Input */
 input{
     border-radius: 20px;
+    height: 50px;
 }
 
 /*Movimientos*/
@@ -123,7 +121,9 @@ a{
 }
 #dato{
     grid-area: dato;
+
 }
+
 
 .relleno{
     height: 70%;
@@ -143,7 +143,7 @@ a{
 }
 #dato > p{
     font-size: 15px;
-    align-items: center;
+    text-align-last: right;
 }
 /*Botones*/
 button {
@@ -172,8 +172,10 @@ button:hover {
     color: #0050F5;
     border: 2px solid #0050F5;
 }
-
-.boton{
+button > a{
+    color: #fff;
+}
+#botones{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -196,4 +198,131 @@ select{
     border: 2px solid #ccc;
     border-radius: 30px;
     height: 30px;
+}
+@media (max-width: 428px) {
+    ul {
+        text-align: center;
+    }
+    ul button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .modalmask {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .modalbox {
+        width: 90%;
+        height: 90%;
+    }
+    .modalbox.movedown {
+        top: 5%;
+    }
+    .modalbox .img {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .modalbox .relleno {
+        padding: 20px;
+    }
+    .modalbox input[type="text"],
+    .modalbox input[type="password"],
+    .modalbox input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    .modalbox .botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .modalbox button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .modalbox .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .modalbox .imagen {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+    }
+    .modalbox .img1 {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Estilos para dispositivos con ancho mayor o igual a 1500px (1920x1080 píxeles) */
+@media (min-width: 1500px) {
+    ul {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    ul button {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+    .modalmask {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .modalbox {
+        width: 50%;
+        height: 70%;
+    }
+    .modalbox.movedown {
+        top: 10%;
+    }
+    .modalbox .img {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .modalbox .relleno {
+        padding: 30px;
+    }
+    .modalbox input[type="text"],
+    .modalbox input[type="password"],
+    .modalbox input[type="date"] {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .modalbox .botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .modalbox button {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    .modalbox .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .modalbox .imagen {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+    }
+    .modalbox .img1 {
+        width: 40px;
+        height: 40px;
+    }
 }
