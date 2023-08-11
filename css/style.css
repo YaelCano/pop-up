@@ -36,7 +36,7 @@
 /*Formato de la ventana*/
 .modalbox{
     width: 500px;
-    height: 760px;
+    height: 703px;
     position: relative;
     margin-top: 46px;
     padding: 5px 10px 13px 20px;
@@ -46,6 +46,18 @@
     -moz-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
         
+}
+#login1{
+    width: 500px;
+    height: 600px;
+    position: relative;
+    margin-top: 46px;
+    padding: 5px 10px 13px 20px;
+    background: #fff;
+    border-radius:20px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
 }
 /*Input */
 input{
@@ -69,7 +81,7 @@ input{
 
 }
 .modalmask:target .movedown{       
-margin:10% auto;
+margin:4% auto;
 }
 .modalmask:target .rotate{     
     transform: rotate(360deg) scale(1,1);
@@ -167,8 +179,10 @@ a{
     align-content: center;
     justify-content: center;
     align-items: center;
-    text-align: center;
-  
+    text-align: center;  
+}
+.contenido{
+    font-size: 50%;
 }
 
 
@@ -202,16 +216,11 @@ button:hover {
 button > a{
     color: #fff;
 }
-#botones{
+.botones{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    align-content: center;
+    flex-direction: column;
     justify-content: center;
-    
-    
-}    
+}  
 .container{
     display: flex;
     align-items: center;
@@ -288,7 +297,6 @@ select{
     }
 }
 
-/* Estilos para dispositivos con ancho mayor o igual a 1500px (1920x1080 píxeles) */
 @media (min-width: 1500px) {
     ul {
         display: flex;

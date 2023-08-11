@@ -12,7 +12,7 @@
     <button><a href="#modal1">Ingresar</a></button>
 </ul>
 <div id="modal1" class="modalmask">
-    <div class="modalbox movedown">
+    <div class="modalbox movedown" id="login">
     <a href="#close" title="Close" class="close">
         <i class="fa-solid fa-right-from-bracket"></i>
     </a>
@@ -21,9 +21,7 @@
     </div>    
     <div class="relleno">
         <div id="dato">
-            <div id="contitle">
-                <h4>Por favor Ingresa tu Repair Express ID</h4>
-            </div>
+            <h4 class="centrado">Por favor Ingresa tu Repair Express ID</h4>
             <p>Repair Express ID: </p><br>
             <input type="text" id="fname" name="fname"><br>
             <p>Contraseña</p><br>
@@ -45,12 +43,15 @@
     </div>
     </div>
 </div>
+
+
 <div id="modal2" class="modalmask">
     <div class="modalbox movedown" id="login1">
         <a href="#close" title="Close" class="close"><i class="fa-solid fa-right-from-bracket"></i> </a>
         <div class="img">
             <img src="image/Repair.png" alt="Repair-Express">
         </div>
+        <div class="contenido">
             <p>Correo Electronico(Este sera tu Repair Express ID)</p>
             <input type="text" id="fcorreo" name="fcorreo"><br>
             <p>Contraseña</p><br>
@@ -61,6 +62,7 @@
             <input type="date" id="fechaNacimiento" name="fechaNacimiento"><br>
             <p>Direccion</p><br>
             <input type="text" id="fdireccion" name="fdireccion"><br>
+        </div>
             <div class="botons">
                 <button>Registrase</button>
             </div>
