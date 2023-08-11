@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "MyriadPro-light";
+    src: url(../font/MyriadPro-Light.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "MyriadPro";
+    src: url(../font/MYRIADPRO-REGULAR.OTF) format("truetype");
+}
+
+@font-face {
+    font-family: "MyriadPro-Bold";
+    src: url(../font/MYRIADPRO-BOLD.OTF) format("truetype");
+}
+
 /*Efecto*/
 .modalmask {
     position: fixed;
@@ -123,7 +138,6 @@ a{
     grid-area: dato;
 
 }
-
 
 .relleno{
     height: 70%;
