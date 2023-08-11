@@ -153,12 +153,25 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: flex-start;
 }
 #dato > p{
     font-size: 15px;
-    text-align-last: right;
+    text-align: left; 
+    display: flex; 
+    align-items: flex-start; 
 }
+#contitle > p{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+}
+
+
 /*Botones*/
 button {
     --primary-color: #0050F5;
